@@ -2,6 +2,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
