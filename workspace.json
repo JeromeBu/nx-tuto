@@ -220,6 +220,34 @@
           }
         }
       }
+    },
+    "calculator": {
+      "root": "libs/calculator",
+      "sourceRoot": "libs/calculator/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "config": "libs/calculator/.eslintrc",
+            "tsConfig": [
+              "libs/calculator/tsconfig.lib.json",
+              "libs/calculator/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/calculator/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/calculator/jest.config.js",
+            "tsConfig": "libs/calculator/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

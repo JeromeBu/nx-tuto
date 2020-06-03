@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@nx-tuto/data": ["libs/data/src/index.ts"],
-      "@nx-tuto/ui": ["libs/ui/src/index.ts"]
+      "@nx-tuto/ui": ["libs/ui/src/index.ts"],
+      "@nx-tuto/calculator": ["libs/calculator/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,11 +1,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import Todos from "./todos";
+import { Todos } from "./todos";
 
 describe(" Todos", () => {
   it("should render successfully", () => {
-    const { baseElement } = render(<Todos />);
+    const { baseElement } = render(<Todos todos={[{ title: "Yo" }]} />);
     expect(baseElement).toBeTruthy();
   });
 });
