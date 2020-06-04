@@ -6,5 +6,5 @@ before_install:
   - docker build -t nx-tuto-dev -f Dockerfile.dev2 .
 
 script:
-  - docker run nx-tuto-dev npm run affected:lint
-  - docker run nx-tuto-dev npm run affected:test
+  - docker run nx-tuto-dev npm run affected:lint -- --base=origin/master
+  - docker run nx-tuto-dev npm run affected:test -- --base=origin/master
