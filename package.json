@@ -6,6 +6,8 @@
     "nx": "nx",
     "start": "nx serve",
     "build": "nx build",
+    "build:front": "nx run front:build",
+    "build:api": "nx run api:build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
@@ -34,7 +36,6 @@
     "styled-components": "5.0.1"
   },
   "devDependencies": {
-    "@nrwl/cypress": "9.3.0",
     "@nrwl/eslint-plugin-nx": "9.3.0",
     "@nrwl/express": "9.3.0",
     "@nrwl/jest": "9.3.0",
@@ -52,7 +53,6 @@
     "@types/supertest": "^2.0.9",
     "@typescript-eslint/eslint-plugin": "2.19.2",
     "@typescript-eslint/parser": "2.19.2",
-    "cypress": "^4.1.0",
     "dotenv": "6.2.0",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.0.0",

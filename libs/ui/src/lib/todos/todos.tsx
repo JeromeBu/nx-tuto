@@ -1,4 +1,4 @@
-import { Todo } from "@nx-tuto/data";
+import { Todo } from "@nx-tuto/interface";
 import React from "react";
 
 export const Todos = (props: { todos: Todo[] }) => {

@@ -7,6 +7,7 @@ describe("Calculator", () => {
       expect(add(1)).toBe(1);
     });
   });
+
   describe("2 numbers are provided", () => {
     it("adds the 2 numbers", () => {
       expect(add(0, 1)).toEqual(1);

@@ -1,4 +1,4 @@
-import { Todo } from "@nx-tuto/data";
+import { Todo } from "@nx-tuto/interface";
 import { Todos } from "@nx-tuto/ui";
 import React, { useEffect, useState } from "react";
 

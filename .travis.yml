@@ -1,0 +1,15 @@
+sudo: required
+services:
+  - docker
+language: node_js
+node_js:
+  - 14
+
+before_install:
+  - docker build -t jeromebu/nx-tuto -f Dockerfile.front .
+  - docker build --target nx-tuto-front -t nx-tuto-front .
+  - docker build --target nx-tuto-api -t nx-tuto-api .
+
+script:
+  - docker run nx-tuto-front npm run test -- --coverage
+  - docker run nx-tuto-front npm run test -- --coverage
